@@ -1,0 +1,17 @@
+---
+import Button from '../components/Button.jsx'
+import Header from '../components/Header.astro'
+import BaseHead from '../components/BaseHead.astro'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+<body>
+    <Header />
+    <Button client:load/>
+</body>
+</html>
+    
